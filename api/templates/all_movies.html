@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for mov in movie %}
+        <p>{{ mov }}</p>
+        {% for m in mov.items %}
+            {{ m }}
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
